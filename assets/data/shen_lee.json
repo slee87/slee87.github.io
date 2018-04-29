@@ -1,0 +1,80 @@
+{
+  "name": "Shen Lee",
+  "profile": "Hi there! I'm a data analyst and visualization specialist. I love digging into data and looking for interesting stories to tell, and telling those stories with compelling visuals.",
+  "work": [
+    {
+      "company": "Westat",
+      "color": "#005683",
+      "position": "Research Analyst",
+      "begin": "July 2011",
+      "end": "",
+      "responsibilities": [
+        "For the U.S. Department of Education’s (ED’s) Policy and Program Studies Service and Office of English Language Acquisition, develop interactive data visualizations (including bar/column charts, dot plots, dumbbell plots, stacked bar charts, line charts and tile maps) with D3.js for data stories designed to inform policymakers and the public about various topics. The data visualizations were coded to be reusable functions to minimize development time, and included features such as tooltips, filters, and toggles to dynamically update or sort data. Also contribute HTML, CSS and JavaScript coding to the data stories, and review literature and prepare text to accompany the data visualizations as needed.",
+        "Lead the analysis and data visualization team for ED’s reports on teacher quality. Using Excel and SAS, prepared analyses and data visualizations of Title II, Higher Education Act data on teacher preparation programs to provide policymakers and the public with insights into the types of institutions of higher education that offer teacher preparation programs, the teacher candidates enrolled in those programs, and gaps between teacher candidate test and cut scores. Provided guidance to other team members, and ideas and sample visualizations to web developers to incorporate into the data collection and reporting platform.",
+        "On an annual basis, lead data collection, analysis, and reporting efforts for the Survey on the Use of Funds Under Title II, Part A. After taking over from the previous lead, revamped and modernized the data visualizations utilized in the report, and later worked with the graphics team to further improve the aesthetics of the report. Visualizations from the latest report were utilized in an article on Elementary and Secondary Education Act Title II, Part A funds published by Education Week.",
+        "Develop reports with data visualizations using D3.js, HTML, and CSS for the Massachusetts Department of Elementary and Secondary Education’s VISTA survey project. The reports include options for users to filter data by various subgroups, after which the charts automatically update based on the selections. In addition, while the reports are designed for online deployment, they are simultaneously programmed to be printer‐friendly.",
+        "Develop data dashboards with a variety of visualizations using the Clicdata platform for the IDEA Data Center to share data reported under Part B and Part C of the Individuals with Disabilities Education Act. The data dashboards present data from publicly‐reported data tables in a user‐friendly way, and allow users to interact with the data by filtering along various dimensions including disability, age, race/ethnicity category, and other demographic characteristics.",
+        "Developed a SAS program to compile large datasets from multiple sources for a weekly report for the Healthy Schools Program (HSP). Using that data file, programmed an Excel report that dynamically updated charts and tables based on the user’s selections. The charts and tables helped HSP Program Managers quickly view how their schools and districts were performing on the School Health Index (SHI), including showing progress over time to full implementation the policies and practices in the SHI.",
+        "Using a combination of Tableau and QGIS, plotted the locations, types, and funding range of Appalachian Regional Commission (ARC) grantees to provide context in an evaluation of ARC’s Leadership and Community Capacity projects."
+      ],
+      "tools": [ "SAS", "Excel", "STATA", "Tableau", "D3.js", "HTML", "CSS" ]
+    },
+    {
+      "company": "Johns Hopkins University",
+      "color": "#002d72",
+      "position": "Research and Teaching Assistant",
+      "begin": "September 2010",
+      "end": "May 2011",
+      "responsibilities": [
+        "Compiled and manipulated large amounts of data from the Bureau of Labor Statistics Quarterly Census of Employment and Wages with Excel to produce graphs illustrating the growth of non-profit employment throughout the United States.",
+        "Helped run STATA lab sessions, providing graduate students with guidance on conducting various econometric analyses."
+      ],
+      "tools": [ "Excel", "STATA" ]
+    },
+    {
+      "company": "Centre for Public Policy Studies (Kuala Lumpur, Malaysia)",
+      "color": "#137493",
+      "position": "Research Intern",
+      "begin": "June 2010",
+      "end": "August 2010",
+      "responsibilities": [
+        "Conducted a critical literature review to write a report on the measurement of human capital and the contribution of Malaysian higher education institutions to the country’s human capital development.",
+        "Compiled statistics on and conducted research into the “brain drain” occurring in Malaysia to develop a proposal for a conference on how to nurture talented Malaysians and how best to tap into the potential of the Malaysian diaspora.",
+        "Acted as a rapporteur for several conferences and roundtable discussions on topics such as the knowledge economy and the 10th Malaysia Plan."
+      ]
+    },
+    {
+      "company": "University of Maryland, College Park",
+      "color": "#E03A3E",
+      "position": "Research Assistant",
+      "begin": "September 2007",
+      "end": "August 2009",
+      "responsibilities": [
+        "For the Minorities at Risk project, researched and coded the risk of rebellion of various minority groups throughout Asia, focusing on variables such as political and economic repression, social status, and support of various organizations.",
+        "For the Minorities at Risk Organizational Behavior project, researched and coded the activities of the Organisasi Papua Merdeka in Indonesia, focusing on variables such as the tactics employed, the level of domestic support, the motivations, and the grievances of the organization.",
+        "For the USAID Alert List, researched and collected data for over 160 countries, including variables such as use of political terror, presence of factionalism, gender life expectancy ratio, asylum requests, and three-year change in GDP, among others, with the purpose of assigning countries a “fragility” score.",
+        "For the Mediating Intrastate Crises Project, worked in two-person teams and researched various intrastate conflicts in Africa, determining key crises dates, obtaining information and determining the role of the crisis actors, with the purpose of identifying the role of mediation in the resolution of those conflicts."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.A in Public Policy",
+      "institution": "Johns Hopkins University",
+      "color": "#002d72",
+      "year": "2011"
+    },
+    {
+      "degree": "B.A. in Economics",
+      "institution": "University of Maryland, College Park",
+      "color": "#E03A3E",
+      "year": "2009"
+    },
+    {
+      "degree": "B.A. in Government & Politics",
+      "institution": "University of Maryland, College Park",
+      "color": "#E03A3E",
+      "year": "2009"
+    }
+  ]
+}
