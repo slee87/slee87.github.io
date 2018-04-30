@@ -9,59 +9,80 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Scripts -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.3.1/stickybits.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
   </head>
   <body>
     <div id="container">
       <div id="bio">
-        <div id="photo">
-          <img src="assets/images/pic.jpg" />
+        <div class="content">
+          <div id="photo"></div>
+          <div id="name"></div>
+          <div id="profile"></div>
+          <div id="links"></div>
         </div>
-        <div id="profile"></div>
       </div>
+
       <div id="resume">
-        <!-- Skills -->
+        <div class="content">
+          <!-- Bio for mobile -->
+          <div id="bioMobile">
+            <div id="photoM"></div>
+            <div id="profileM"></div>
+          </div>
 
-        <div id="skills">
-          <h1>Skills</h1>
+          <!-- Skills -->
+
+          <div id="skills">
+            <h1>Skills</h1>
+          </div>
+
+          <!-- Skills -->
+
+          <div id="tools">
+            <h1>Tools</h1>
+          </div>
+
+          <!-- Work history -->
+
+          <div id="work">
+            <h1>Work History</h1>
+          </div>
+
+          <!-- Education -->
+
+          <div id="education">
+            <h1>Education</h1>
+          </div>
         </div>
-
-        <!-- Work history -->
-
-        <div id="work">
-          <h1>Work History</h1>
-        </div>
-
-        <!-- Products -->
-
-        <div id="products">
-          <h1>Products I've Contributed To</h1>
-        </div>
-
-        <!-- Education -->
-
-        <div id="education">
-          <h1>Education</h1>
-        </div>
-
       </div>
     </div>
 
     <script>
-      // use stickybits to add sticky to bio
-      stickybits('#bio');
 
       // read json data
       $.getJSON('assets/data/shen_lee.json', function(data) {
-        console.log(data);
+        // populate picture
+        $("#photo").append("<img src='" + data.picture + "' />");
+        $("#photoM").append("<img src='" + data.picture + "' />");
+
+        // populate name
+        $("#name").append(data.name);
 
         // populate profile
         $("#profile").append(data.profile);
+        $("#profileM").append(data.profile);
+
+        // populate links
+        data.links.forEach(function(link) {
+          var linkCode = "<a href='" + link.url + "' target='_blank'><i class='" + link.icon + "'></i></a>";
+          $("#links").append(linkCode);
+        });
 
         // populate work history
         let work = data.work;
@@ -85,20 +106,23 @@
               });
               card += "</ul>";
 
-              // add tools
-              if (record.tools) {
-                card += "<p>Tools: ";
+              // add links
+              if (record.links) {
+                card += "<div class='linksContainer'>"
 
-                let toolsArr = record.tools;
-                toolsArr.forEach(function(tool, i) {
-                  if (i < toolsArr.length - 1) {
-                    card += tool + ", ";
-                  } else {
-                    card += tool;
-                  };
+                let linksArr = record.links;
+
+                // sort links
+                linksArr.sort(function(a, b) {
+                  return a.title.localeCompare(b.title);
                 });
 
-                card += "</p>";
+                // append link cards
+                linksArr.forEach(function(link) {
+                  card += "<a class='linkButton' href='" + link.url + "' target='_blank'><i class='fas fa-link'></i> " + link.title + "</a>"
+                })
+
+                card += "</div>";
               };
 
           // append cards

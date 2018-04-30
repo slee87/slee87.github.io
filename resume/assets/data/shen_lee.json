@@ -1,6 +1,29 @@
 {
   "name": "Shen Lee",
+  "picture": "assets/images/pic.jpg",
   "profile": "Hi there! I'm a data analyst and visualization specialist. I love digging into data and looking for interesting stories to tell, and telling those stories with compelling visuals.",
+  "links": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shen-han-lee-09837a16",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/slee87/slee87.github.io",
+      "icon": "fab fa-github"
+    },
+    {
+      "title": "Kaggle",
+      "url": "https://www.kaggle.com/slee87",
+      "icon": "fab fa-python"
+    },
+    {
+      "title": "E-mail",
+      "url": "mailto:shenhan.lee@gmail.com",
+      "icon": "far fa-envelope"
+    }
+  ],
   "work": [
     {
       "company": "Westat",
@@ -17,7 +40,24 @@
         "Developed a SAS program to compile large datasets from multiple sources for a weekly report for the Healthy Schools Program (HSP). Using that data file, programmed an Excel report that dynamically updated charts and tables based on the user’s selections. The charts and tables helped HSP Program Managers quickly view how their schools and districts were performing on the School Health Index (SHI), including showing progress over time to full implementation the policies and practices in the SHI.",
         "Using a combination of Tableau and QGIS, plotted the locations, types, and funding range of Appalachian Regional Commission (ARC) grantees to provide context in an evaluation of ARC’s Leadership and Community Capacity projects."
       ],
-      "tools": [ "SAS", "Excel", "STATA", "Tableau", "D3.js", "HTML", "CSS" ]
+      "links": [
+        {
+          "title": "Our Nation's English Learners",
+          "url": "https://www2.ed.gov/datastory/el-characteristics/index.html"
+        },
+        {
+          "title": "Chronic Absenteeism in the Nation's Schools",
+          "url": "https://ed.gov/datastory/chronicabsenteeism.html"
+        },
+        {
+          "title": "The Secretary’s Ninth Report on Teacher Quality",
+          "url": "https://title2.ed.gov/Public/TitleIIReport13.pdf"
+        },
+        {
+          "title": "GitHub Repository",
+          "url": "https://github.com/slee-w/slee-w.github.io"
+        }
+      ]
     },
     {
       "company": "Johns Hopkins University",
@@ -28,8 +68,7 @@
       "responsibilities": [
         "Compiled and manipulated large amounts of data from the Bureau of Labor Statistics Quarterly Census of Employment and Wages with Excel to produce graphs illustrating the growth of non-profit employment throughout the United States.",
         "Helped run STATA lab sessions, providing graduate students with guidance on conducting various econometric analyses."
-      ],
-      "tools": [ "Excel", "STATA" ]
+      ]
     },
     {
       "company": "Centre for Public Policy Studies (Kuala Lumpur, Malaysia)",
