@@ -181,17 +181,20 @@ ul li:last-of-type {
 @media screen and (max-width: 768px) {
   body {
     font-size: 10pt;
+    overflow: auto;
   }
 
   #container {
     max-width: 750px;
-    flex-direction: column;
+    display: block;
   }
 
   #bio {
-    display: block;
+    /* display: block; */
     width: 100%;
-    flex-grow: 0;
+    height: auto;
+    position: fixed;
+    top: 0;
     background-color: #fff;
     border-bottom: 1px solid #000;
   }
@@ -225,6 +228,10 @@ ul li:last-of-type {
     display: block;
     width: 35%;
     margin: 0.5em auto;
+  }
+
+  #resume {
+    display: block;
   }
 
   #photoM {

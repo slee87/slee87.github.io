@@ -64,7 +64,6 @@
     </div>
 
     <script>
-
       // read json data
       $.getJSON('assets/data/shen_lee.json', function(data) {
         // populate picture
@@ -85,8 +84,7 @@
         });
 
         // populate work history
-        let work = data.work;
-        work.forEach(function(record) {
+        data.work.forEach(function(record) {
           // set end date
           let endDate;
           if (!record.end) { endDate = "present" }
@@ -130,8 +128,7 @@
         });
 
         // populate education
-        let educ = data.education;
-        educ.forEach(function(record) {
+        data.education.forEach(function(record) {
           // define education card
           let card =  "<div class='card' style='border-color: " + record.color + "'>";
               card +=   "<h2>" + record.degree + "</h2>" +
@@ -144,7 +141,6 @@
 
       })
       .fail(function(jqxhr, textStatus, error) { console.log(error); });
-
 
     </script>
 
