@@ -232,6 +232,7 @@ ul li:last-of-type {
 
   #resume {
     display: block;
+    overflow: inherit;
   }
 
   #photoM {
