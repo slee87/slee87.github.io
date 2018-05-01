@@ -41,6 +41,10 @@ ul li:last-of-type {
   margin-bottom: 0em;
 }
 
+p {
+  margin-top: 1em;
+}
+
 #container {
   max-width: 1100px;
   height: 100%;
@@ -120,6 +124,50 @@ ul li:last-of-type {
   display: none;
 }
 
+#skillsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.skill {
+  width: 20%;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.skill i {
+  font-size: 2em;
+  padding: 10px;
+}
+
+#toolsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.tool {
+  width: 33%;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.tool ul {
+  padding-left: 0;
+}
+
+.tool li {
+  list-style: none;
+  padding-left: 0;
+}
+
 .card {
   margin: 10px 0;
   border-left: 5px solid;
@@ -142,7 +190,9 @@ ul li:last-of-type {
   border: 1px solid rgba(0,0,0,0.5);
   box-shadow: 0px 3px rgba(0,0,0,0.1);
   border-radius: 5px;
-  /* background-color: rgba(0,0,0,0.1); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.3s;
   text-transform: uppercase;
   text-decoration: none;
@@ -229,7 +279,7 @@ ul li:last-of-type {
 
   #bioMobile {
     display: block;
-    width: 35%;
+    width: 50%;
     margin: 0.5em auto;
   }
 
@@ -259,6 +309,10 @@ ul li:last-of-type {
     padding-bottom: 0px;
   }
 
+  .skill {
+    width: 33%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -268,6 +322,11 @@ ul li:last-of-type {
 
   .linkButton {
     width: 100%;
+  }
+
+  .tool {
+    width: 50%;
+
   }
 
 }

@@ -1,7 +1,7 @@
 {
   "name": "Shen Lee",
   "picture": "assets/images/pic.jpg",
-  "profile": "Hi there! I'm a data analyst and visualization specialist. I love digging into data and looking for interesting stories to tell, and telling those stories with compelling visuals.",
+  "profile": "Hi there! I'm a data analyst and visualization specialist with experience in data collection, analysis, and reporting. I love digging into data and looking for interesting stories to tell, and telling those stories with compelling visuals.",
   "links": [
     {
       "title": "LinkedIn",
@@ -22,6 +22,42 @@
       "title": "E-mail",
       "url": "mailto:shenhan.lee@gmail.com",
       "icon": "far fa-envelope"
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Survey development",
+      "icon": "fas fa-question-circle"
+    },
+    {
+      "skill": "Data collection",
+      "icon": "fas fa-clipboard-list"
+    },
+    {
+      "skill": "Data analysis",
+      "icon": "fas fa-calculator"
+    },
+    {
+      "skill": "Data visualization",
+      "icon": "fas fa-chart-line"
+    },
+    {
+      "skill": "Web development",
+      "icon": "fas fa-code"
+    }
+  ],
+  "tools": [
+    {
+      "category": "Data analysis",
+      "software": [ "SAS", "STATA", "Excel" ]
+    },
+    {
+      "category": "Data visualization",
+      "software": [ "D3.js", "HTML/CSS/JS", "Tableau/Power BI" ]
+    },
+    {
+      "category": "Currently learning",
+      "software": [ "Python", "React", "Node.js" ]
     }
   ],
   "work": [
@@ -114,6 +150,26 @@
       "institution": "University of Maryland, College Park",
       "color": "#E03A3E",
       "year": "2009"
+    }
+  ],
+  "courses": [
+    {
+      "name": "The Web Developer Bootcamp",
+      "company": "Udemy",
+      "color": "#ec5252",
+      "year": "2018"
+    },
+    {
+      "name": "Tableau Desktop I and II",
+      "company": "Tableau Foundation",
+      "color": "#1d457f",
+      "year": "2017"
+    },
+    {
+      "name": "Site Building with Drupal",
+      "company": "Fig Leaf Software",
+      "color": "#6DAB3C",
+      "year": "2013"
     }
   ]
 }

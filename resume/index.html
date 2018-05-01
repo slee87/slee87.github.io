@@ -40,12 +40,14 @@
 
           <div id="skills">
             <h1>Skills</h1>
+            <div id="skillsContainer"></div>
           </div>
 
           <!-- Skills -->
 
           <div id="tools">
             <h1>Tools</h1>
+            <div id="toolsContainer"></div>
           </div>
 
           <!-- Work history -->
@@ -58,6 +60,12 @@
 
           <div id="education">
             <h1>Education</h1>
+          </div>
+
+          <!-- Other courses -->
+
+          <div id="otherCourses">
+            <h1>Other Courses</h1>
           </div>
         </div>
       </div>
@@ -83,6 +91,25 @@
           $("#links").append(linkCode);
         });
 
+        // populate skills
+        data.skills.forEach(function(skill) {
+          var skillCode = "<div class='skill'><i class='" + skill.icon + "'></i><br />" + skill.skill + "</div>";
+          $("#skillsContainer").append(skillCode);
+        });
+
+        // populate tools
+        data.tools.forEach(function(category) {
+          let card =  "<div class='tool'><strong>" + category.category + "</strong>";
+              card += "<ul>";
+
+          category.software.forEach(function(item) {
+              card += "<li>" + item + "</li>"
+          });
+          card += "</ul></div>";
+
+          $("#toolsContainer").append(card);
+        })
+
         // populate work history
         data.work.forEach(function(record) {
           // set end date
@@ -94,20 +121,22 @@
           let card =  "<div class='card' style='border-color: " + record.color + "'>";
               card +=   "<h2>" + record.position + "</h2>" +
                         "<em>" + record.company + "<br />" +
-                        record.begin + " - " + endDate + "</em>" +
-                        "<ul>";
+                        record.begin + " - " + endDate + "</em>";
 
               // add responsibilities
-              let respsArr = record.responsibilities;
-              respsArr.forEach(function(resp) {
-                card += "<li>" + resp + "</li>";
-              });
-              card += "</ul>";
+              if (record.responsibilities) {
+                card += "<ul>";
+
+                let respsArr = record.responsibilities;
+                respsArr.forEach(function(resp) {
+                  card += "<li>" + resp + "</li>";
+                });
+                card += "</ul>";
+              }
 
               // add links
               if (record.links) {
-                card += "<div class='linksContainer'>"
-
+                card += "<p><strong>Links:</strong></p><div class='linksContainer'>"
                 let linksArr = record.links;
 
                 // sort links
@@ -117,7 +146,7 @@
 
                 // append link cards
                 linksArr.forEach(function(link) {
-                  card += "<a class='linkButton' href='" + link.url + "' target='_blank'><i class='fas fa-link'></i> " + link.title + "</a>"
+                  card += "<a class='linkButton' href='" + link.url + "' target='_blank'>" + link.title + "</a>"
                 })
 
                 card += "</div>";
@@ -137,6 +166,18 @@
 
           // append cards
           $("#education").append(card);
+        });
+
+        // populate other courses
+        data.courses.forEach(function(record) {
+          // define education card
+          let card =  "<div class='card' style='border-color: " + record.color + "'>";
+              card +=   "<h2>" + record.name + "</h2>" +
+                        "<em>" + record.company + ", " + record.year + "</em>" +
+                      "</div>";
+
+          // append cards
+          $("#otherCourses").append(card);
         });
 
       })
