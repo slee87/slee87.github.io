@@ -66,7 +66,7 @@
       "color": "#005683",
       "position": "Research Analyst",
       "begin": "July 2011",
-      "end": "",
+      "end": "June 2018",
       "responsibilities": [
         "For the U.S. Department of Education’s (ED’s) Policy and Program Studies Service and Office of English Language Acquisition, develop interactive data visualizations (including bar/column charts, dot plots, dumbbell plots, stacked bar charts, line charts and tile maps) with D3.js for data stories designed to inform policymakers and the public about various topics. The data visualizations were coded to be reusable functions to minimize development time, and included features such as tooltips, filters, and toggles to dynamically update or sort data. Also contribute HTML, CSS and JavaScript coding to the data stories, and review literature and prepare text to accompany the data visualizations as needed.",
         "Lead the analysis and data visualization team for ED’s reports on teacher quality. Using Excel and SAS, prepared analyses and data visualizations of Title II, Higher Education Act data on teacher preparation programs to provide policymakers and the public with insights into the types of institutions of higher education that offer teacher preparation programs, the teacher candidates enrolled in those programs, and gaps between teacher candidate test and cut scores. Provided guidance to other team members, and ideas and sample visualizations to web developers to incorporate into the data collection and reporting platform.",
@@ -92,6 +92,10 @@
         {
           "title": "GitHub Repository",
           "url": "https://github.com/slee-w/slee-w.github.io"
+        },
+        {
+          "title": "Educational Experiences of English Learners",
+          "url": "https://www2.ed.gov/datastory/el-experiences/index.html"
         }
       ]
     },
