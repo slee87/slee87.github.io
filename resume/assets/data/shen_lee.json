@@ -62,6 +62,12 @@
   ],
   "work": [
     {
+      "company": "AARP",
+      "color": "#ef3829",
+      "position": "Data Visualization Advisor",
+      "begin": "July 2018"
+    },
+    {
       "company": "Westat",
       "color": "#005683",
       "position": "Research Analyst",
